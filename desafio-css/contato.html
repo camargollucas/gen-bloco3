@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gamja+Flower&family=Maven+Pro:wght@400..900&family=Protest+Revolution&display=swap"
+        rel="stylesheet">
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <header>
+        <div class="conteudo-header">
+            <div class="conteudo-header-esq">
+                <img class="img-portfolio" src="./assets/images/port.png" alt="Logo do Portfólio">
+                <h1>Portfólio - Lucas Camargo</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="contato">
+            <div class="form-container">
+                <form class="contato-form">
+                    <h3>Contato</h3>
+                    <div class="campos-form">
+                        <label for="nome">Nome:</label>
+                        <input onkeyup="validarNome()" id="nome" name="nome" type="text" placeholder="Insira o seu nome completo">
+                        <div id="txtNome"></div>
+                    </div>
+
+                    <div class="campos-form">
+                        <label for="email">E-mail:</label>
+                        <input onkeyup="validarEmail2()" id="email" name="email" type="text" placeholder="Insira o seu e-mail">
+                        <div id="txtEmail"></div>
+                    </div>
+
+                    <div class="campos-form">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea onkeyup="validarMensagem()" id="mensagem" name="mensagem" rows="8" placeholder="Deixe sua mensagem..."></textarea>
+                        <div id="txtMensagem"></div>
+                    </div>
+
+                    <button type="button" onclick="enviarForm()">Enviar</button>
+                </form>
+            </div>
+
+            <div class="form-container">
+                <form class="cep-form">
+                    <h3>Consultar CEP</h3>
+                    <div>
+                        <label for="cep">CEP:</label>
+                        <input onkeyup="validarCep()" id="cep" name="cep" type="text"
+                            placeholder="Digite o número do CEP">
+                        <div id="txtCep"></div>
+                    </div>
+                    <button type="button" onclick="consultarCep()">Consultar</button>
+
+                    <div>
+                        <label for="dados">Endereço:</label>
+                        <textarea id="dados" name="dados" rows="7" placeholder="Busca CEP..."></textarea>
+                        <div id="txtCep"></div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <a href="https://www.linkedin.com/in/lucas-lima-de-camargo/" target="_blank">
+                <img src="assets/images/linkedin.png" alt="Linkedin">
+            </a>
+            <a href="http://github.com/camargollucas" target="_blank">
+                <img src="assets/images/github.png" alt="Github">
+            </a>
+            <a href="mailto:camargolimalucas@gmail.com" target="_blank">
+                <img src="assets/images/logo-email.png" alt="Instagram">
+            </a>
+        </div>
+        <p>Desenvolvido por: Lucas Lima de Camargo - 2024 &copy;</p>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

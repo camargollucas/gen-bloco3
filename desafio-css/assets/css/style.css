@@ -1,0 +1,184 @@
+/* estilo aplicado a pagina toda */
+
+body {
+    font-family: Maven Pro, sans-serif;
+    background-color: #FFF9E7;
+    padding: 0;
+    margin: 0 150px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* estilo do header */
+header {
+    background-color: #3A53E3;
+    color: #fff;
+    padding: 20px;
+}
+
+.conteudo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.conteudo-header-esq {
+    display: flex;
+    align-items: center;
+}
+
+.img-portfolio {
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* estilo do corpo da pagina */
+
+.sobre-mim {
+    background-color: #F8CD53;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    border-radius: 10px;
+}
+
+.sobre-texto {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.sobre-imagens {
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-imagens img {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1, h2, h3 {
+    font-size: 27px;
+}
+
+/* estilo para a seção de contato */
+#contato {
+    margin-bottom: 37px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* estilo para o formulario do contato */
+#contato form:first-child {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* estilo para o formulario do CEP */
+#contato form:last-child {
+    flex: 1;
+}
+
+.campos-form {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #3A53E3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0e0c80;
+}
+
+.form-container {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+#video {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#video .video-container {
+    text-align: center;
+}
+
+#video h3 {
+    margin-bottom: 20px;
+}
+
+#video iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* estilo do footer */
+footer {
+    background-color: #333;
+    color: #FFA500;
+    text-align: center;
+    padding: 10px;
+    margin-top: 80px;
+}
+
+footer div {
+    margin-bottom: 10px;
+}
+
+footer img {
+    max-width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
