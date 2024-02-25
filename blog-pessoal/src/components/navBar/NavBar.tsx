@@ -15,7 +15,6 @@ function Navbar() {
 
   let navbarComponent
   
-
   return (
     <>
      <div className='w-full bg-indigo-900 text-white flex justify-center py-4'>
@@ -23,7 +22,7 @@ function Navbar() {
           <Link to='/home' className='text-2xl font-bold uppercase'>Blog Pessoal</Link>
 
             <div className='flex gap-4'>
-            <div className='hover:underline'>Postagens</div>
+            <Link to='/postagens' className='hover:underline'>Postagens</Link>
             <Link to='/temas' className='hover:underline'>Temas</Link>
             <Link to='/cadastroTema' className='hover:underline'>Cadastrar tema</Link>
               <div className='hover:underline'>Perfil</div>
