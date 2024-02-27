@@ -10,12 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/nanum-gothic": "^5.0.17",
     "@phosphor-icons/react": "^2.0.15",
     "axios": "^1.6.7",
+    "fontsource-quicksand": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-loader-spinner": "5.3.4",
     "react-router-dom": "^6.22.1",
+    "react-toastify": "9.1.2",
     "reactjs-popup": "^2.0.6"
   },
   "devDependencies": {
