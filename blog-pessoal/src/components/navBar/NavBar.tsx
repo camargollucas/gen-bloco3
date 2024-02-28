@@ -21,14 +21,14 @@ function Navbar() {
     navbarComponent = (
       <div className='navbar-container w-full bg-emerald-900 text-white flex justify-center py-4'>
         <div className="container flex justify-between text-lg">
-          <Link to='/home' className='text-2xl font-bold uppercase'>Blog Pessoal</Link>
-
+          <Link to='/home' className='text-2xl font-bold uppercase'>Diário Pokémon</Link>
           <div className='flex gap-4 navbar-links'>
-            <Link to='/postagens' className='hover:text-cyan-300 hover:underline'>Postagens</Link>
-            <Link to='/temas' className='hover:text-cyan-300 hover:underline'>Temas</Link>
-            <Link to='/cadastroTema' className='hover:text-cyan-300 hover:underline'>Cadastrar tema</Link>
-            <Link to='/perfil' className='hover:text-cyan-300 hover:underline'>Perfil</Link>
-            <Link to='' onClick={logout} className='hover:text-cyan-300 hover:underline'>Sair</Link>
+            <Link to='/postagens' className=' hover:underline'>Postagens</Link>
+            <Link to='/temas' className=' hover:underline'>Temas</Link>
+            <Link to='/cadastroTema' className=' hover:underline'>Cadastrar tema</Link>
+            <Link to='/perfil' className=' hover:underline'>Perfil</Link>
+            <Link to='/pokedex' className=' hover:underline'>Pokédex</Link>
+            <Link to='' onClick={logout} className=' hover:underline'>Sair</Link>
           </div>
         </div>
       </div>

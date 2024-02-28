@@ -14,6 +14,8 @@ import Login from './paginas/login/Login';
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
 import Perfil from './paginas/perfil/Perfil';
 import { ToastContainer } from 'react-toastify';
+import Pokedex from './paginas/pokedex/Pokedex';
+import "@fontsource/quicksand";
 
 function App() {
   return (
@@ -37,6 +39,7 @@ function App() {
               <Route path="/editarPostagem/:id" element={<FormularioPostagem />} />
               <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
               <Route path="/perfil" element={<Perfil />} />
+              <Route path="/pokedex" element={<Pokedex />} />
             </Routes>
           </div>
           <Footer />

@@ -73,38 +73,38 @@ function Cadastro() {
       <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold">
         <div className="fundoCadastro hidden lg:block"></div>
         <form className='flex justify-center items-center flex-col w-2/3 gap-3' onSubmit={cadastrarNovoUsuario}>
-          <h2 className='text-slate-900 text-5xl'>Cadastrar</h2>
+          <h2 className='text-slate-900 text-5xl'>Cadastro</h2>
           <div className="flex flex-col w-full">
             <label htmlFor="nome">Nome</label>
             <input
               type="text"
               id="nome"
               name="nome"
-              placeholder="Nome"
+              placeholder="Nome completo"
               className="border-2 border-slate-700 rounded p-2"
               value={usuario.nome}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
           <div className="flex flex-col w-full">
-            <label htmlFor="usuario">Usuario</label>
+            <label htmlFor="usuario">E-mail</label>
             <input
               type="text"
               id="usuario"
               name="usuario"
-              placeholder="Usuario"
+              placeholder="email@exemplo.com"
               className="border-2 border-slate-700 rounded p-2"
               value={usuario.usuario}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
           <div className="flex flex-col w-full">
-            <label htmlFor="foto">Foto</label>
+            <label htmlFor="foto">Link da foto de perfil</label>
             <input
               type="text"
               id="foto"
               name="foto"
-              placeholder="Foto"
+              placeholder="link"
               className="border-2 border-slate-700 rounded p-2"
               value={usuario.foto}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}

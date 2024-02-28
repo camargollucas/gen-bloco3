@@ -15,7 +15,7 @@ function Footer() {
     footerComponent = (
       <div className="flex justify-center bg-emerald-900 text-white shadow-md">
         <div className="container flex flex-col items-center py-8">
-          <Link to='/home'> <p className='self-center text-xl font-semibold mb-4'>blog pessoal | &copy; {data}</p></Link>
+          <Link to='/home'> <p className='self-center text-xl font-semibold mb-4'>diário pokémon | &copy; {data}</p></Link>
           <ul className="flex flex-wrap items-center mb-3 text-sm font-medium">
             <li>
               <Link to='/postagens' className="hover:underline px-4 py-2">Postagens</Link>
